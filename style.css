@@ -56,12 +56,17 @@
 }
 
 .box-2{
+    display: flex;
+    flex-direction: column;
     height: 35vh;
     background-color: white;
     font-family: 'Poppins', sans-serif;
     font-size: medium;
     padding-left: 5%;
 
+}
+.left-form{
+    display: flex;
 }
 
 .box-3{
