@@ -48,8 +48,8 @@
 }
 
 .box-1{
-    height: 37.5vh;
-    padding-top: 25%;
+    height: 30vh;
+    padding-top: 10%;
     padding-left: 5%;
     font-family: 'Poppins', sans-serif;
     font-size: medium;
@@ -58,20 +58,36 @@
 .box-2{
     display: flex;
     flex-direction: column;
-    height: 35vh;
+    height: 40vh;
     background-color: white;
     font-family: 'Poppins', sans-serif;
     font-size: medium;
     padding-left: 5%;
 
 }
-.left-form{
+.form{
     display: flex;
+    gap: 10%;
+    margin-top: 2%;
+}
+.form-divs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
 }
 
 .box-3{
-    height: 37.5vh;
+    height: 30vh;
     
 }
 
+input{
+    width: 250px;
+    height: 20px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid blue;
 }
