@@ -15,26 +15,44 @@
     flex-direction: row;
     width: 100vw;
     height: 100vh;
-    
-    
-    
 }
-.left{
+
+.image-section {
+    background-position: center center;
+    background-image: url("./side-img.jpg");
+    background-size: cover;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+  }
+  
+
+  
+.banner {
     display: flex;
     justify-content: center;
-    width: 35vw;
-    background-image: url(img/side-img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    font-family: Norse-Bold, sans-serif;
-}
-.left-text{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    align-self: flex-end;
-    margin-bottom: 5px;
-}
+    align-items: center;
+    font-size: 5.5rem;
+    font-family: "Norse Bold";
+    margin-top: 20vh;
+    padding: 16px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+.banner img {
+    height: 125px;
+  }
+  
+.banner h2{
+    margin: 0;
+  }
+  
+.attribution {
+    font-size: 0.9rem;
+  }
 
 
 
@@ -63,6 +81,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: medium;
     padding-left: 5%;
+    box-shadow: 2px 5px #b4aeae;
 
 }
 .form{
@@ -89,5 +108,44 @@ input{
 }
 
 input:focus {
-    border: 1px solid blue;
+    border-color: 1px solid blue;
 }
+input:invalid {
+  border-color: red;
+}
+input:valid {
+  border-color: green;
+}
+.btn{
+    background-color: #596D48;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: medium;
+    box-shadow: 2px 3px #b4aeae;
+    
+}
+
+#error{
+    text-align: start;
+    color: red;
+    font-size: x-small;
+}
+.login{
+    margin-top: 5px;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login{
+    color:  #596D48;;
+}
+.editor{
+    color: white;
+}
+
+a {
+    color: white;
+  }
+  

@@ -12,33 +12,48 @@
 </head>
 <body>
   <div class="container">
-   <div class="left">
-    <div class="left-text">Photo by <u>Halie West </u> on <u>Unsplash</u></div>
-   </div>
+    <div class="image-section">
+      <div class="banner">
+        <img src="./odin-lined.png" alt="Odin image" />
+        ODIN
+      </div>
+      <p class="attribution">
+        Photo by
+        <a
+          href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Halie West</a
+        >
+        on
+        <a
+          href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+  </div>
        
    <div class="right">   
     
     <div class="box-1">This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit.Necessitatibus, commodi!<br>Sign up now to get started.<br><br>You know you want to.</div>
     <div class="box-2">
       <h3>Let's do this!</h3>
-      <div class="form">
-       <form action="" method="get" class="form">
-        
+      <form action="" method="get" class="form">
+       <div class="form">  
         <div class="form-div">
           <div class="form-divs">
              <label for="name">First Name</label>
-             <input type="text" id="firstname" name="first_name">
+             <input type="text" id="firstname" name="first_name" required minlength="4" placeholder="First name">
           </div>
          
           <div class="form-divs">
             <label for="email"> Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required placeholder="adress@server.domain">
           </div>
           
           <div class="form-divs">
             <label for="password"> Password</label>
             <input type="password" id="password" name="password
-          ">
+          " required>
+            <p id="error"></p>
           </div>
           
           
@@ -47,7 +62,7 @@
         <div class="form-div">
           <div class="form-divs">
              <label for="lastname">Last Name</label>
-             <input type="text" id="lastname" name="last_name">
+             <input type="text" id="lastname" name="last_name" minlength="4" required placeholder="Last name">
           </div>
          
           <div class="form-divs">
@@ -58,7 +73,7 @@
           <div class="form-divs">
             <label for="confirmpassword"> Confirm Password</label>
             <input type="password" id="confirmpassword" name="confirm_password
-          ">
+          "required>
           </div>
           
           
@@ -68,7 +83,10 @@
       
 
     </div>
-    <div class="box-3">CC</div>
+    <div class="box-3">
+     <button type="submit" class="btn">Create Account</button>
+     <p class="login">Already have an account? <a href="">Log in</a></p>
+    </div>
   </div>
 
   </div>
